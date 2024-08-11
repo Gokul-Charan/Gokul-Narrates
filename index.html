@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokul Narrates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="raw.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="raw.jpg" alt="Gokul" class="profile-img">
+        <h1>Gokul Narrates</h1>
+        <p>Explore my work and let's create something amazing together!</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hey there! I'm Gokul, a studious kid with a passion for storytelling and video editing. I'm the creative force behind two dynamic YouTube channels: 'Gokul Narrates' and 'Mr. Technetium'. While I focus on my studies, creating high-quality video content across various niches including technology, explainer videos, and insightful tutorials is my exciting side hustle.
+            
+            At 'Gokul Narrates', I explore the power of storytelling, producing engaging narratives that captivate and inspire audiences. Whether it's through mesmerizing visuals or powerful scripts, my goal is to deliver content that entertains, informs, and resonates.</p>
+            <img src="banner.jpg" alt="About Banner" class="about-banner">
+            <p>On 'Mr. Technetium', I delve into the fascinating world of technology. From reviewing the latest gadgets to breaking down complex technological concepts and offering detailed tutorials, I help viewers stay ahead in the rapidly evolving tech landscape.
+            
+            As a freelance video editor, I leverage my technical skills and creative instincts to enhance each project, ensuring every video is visually appealing and effectively crafted to achieve its desired impact.
+            
+            Join me on this wonderful journey of exploration and creativity. Subscribe to 'Gokul Narrates' and 'Mr. Technetium' for your regular dose of innovation and inspiration, crafted by a kid who loves to learn and create!
+            </p>
+            <img src="banner2.jpg" alt="About Banner" class="about-banner">
+    </section>
+    
+
+    <section id="showreel">
+        <h2>MY SHOWREEL!</h2>
+        <p>Hey, I guess you now know a lot about me and my mindset now look at my skills!!</p>
+        <div class="video-wrapper">
+            
+            <div class="video-wrapper">
+                <video id="videoPlayer" >
+                    <source src="Editor[2].mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div id="videoControls" class="controls">
+                    <input type="range" id="videoProgress" value="0" min="0" max="100" style="width: 100%;">
+                    <div class="button-group">
+                        <button id="skipBackBtn" onclick="skip(-10)">⏪</button>
+                        <button id="playPauseBtn" onclick="togglePlayPause()">▶️</button>
+                        <button id="skipForwardBtn" onclick="skip(10)">⏩</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="social-links">
+        <div class="button-container">
+            <a href="https://www.youtube.com/@Gokul-Narrates/" class="channel-button" target="_blank">
+                <img src="Untitled.jpg" alt="Gokul Narrates Logo">
+                Visit Gokul Narrates
+            </a>
+            <a href="https://www.youtube.com/@Mr.Technetium-TC" class="channel-button" target="_blank">
+                <img src="logo.jpg" alt="Mr. Technetium Logo">
+                Visit Mr. Technetium
+            </a>
+        </div>
+       
+    </section>
+    
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="service">
+            <h3>Storytelling Videos</h3>
+            <p>Engaging narratives that captivate your audience.</p>
+        </div>
+        <div class="service">
+            <h3>Talking Head Videos</h3>
+            <p>Personal and direct, perfect for vlogs and educational content.</p>
+        </div>
+        <div class="service">
+            <h3>Tech Videos</h3>
+            <p>Detailed and informative, showcasing the latest in technology.</p>
+        </div>
+        <div class="service">
+            <h3>Explainer Videos</h3>
+            <p>Clear and concise, simplifying complex concepts.</p>
+        </div>
+        <div class="service">
+            <h3>Tutorials</h3>
+            <p>Step-by-step guides that are easy to follow.</p>
+        </div>
+    </section>
+
+    <section class="social-links">
+        <h2>Follow Me and Contact Me!</h2>
+        <a href="https://instagram.com/gokulcharanv" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/@Gokul-Narrates" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="mailto:gokulcharanv2009@gmail.com" title="Email Me">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gokul Narrates. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

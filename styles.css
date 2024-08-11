@@ -1,0 +1,319 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ddd;
+    line-height: 1.6;
+    background-color: #121212;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .profile-img {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff; /* White border around profile image */
+}
+
+h1, h2, h3 {
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent background for light text contrast */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Darker modal background */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    background: #222;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.service {
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#about {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('about-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    text-align: center; /* Center alignment for a structured look */
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Better visibility */
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6); /* Enhancing readability */
+}
+
+.about-banner {
+    width: 100%; /* Full width to maintain responsiveness */
+    max-width: 800px; /* Limit the size to ensure it is not too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px 0; /* Add some space around the image */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Optional: adds depth to the image */
+}
+
+#about:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #06BEB6;
+    transition: width 0.6s ease;
+}
+
+#about:hover:after {
+    width: 50%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to left, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: linear-gradient(to right, #2575fc 0%, #6a11cb 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+@media only screen and (max-width: 768px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.button-container {
+    text-align: center;
+}
+.channel-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1a73e8; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.channel-button:hover {
+    background-color: #0f57c2; /* Darker blue on hover */
+}
+.channel-button img {
+    height: 40px; /* Set the size of the logo */
+    width: auto;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Basic Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ddd;
+    background-color: #121212;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Video Player Styles */
+.video-wrapper {
+    position: relative;
+    max-width: 640px; /* Adjust based on your requirements */
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Adds focus and depth */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes the space below the video */
+    border-radius: 8px; /* Consistent rounded corners */
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 8px 8px;
+}
+#showreel {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+#showreel h2 {
+    margin-bottom: 20px;
+}
+
+#videoProgress {
+    height: 5px;
+    cursor: pointer;
+    appearance: none; /* Removes default styling */
+    width: 100%; /* Ensures it fills the container */
+    background: #2575fc no-repeat;
+}
+
+#videoProgress::-webkit-slider-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+#videoProgress::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.controls button {
+    border: none;
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.controls button:hover {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+.social-links {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #ffffff; /* White color for icons */
+    font-size: 24px; /* Larger font size for visibility */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #06BEB6; /* Light blue color on hover for visual feedback */
+}
